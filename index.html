@@ -81,7 +81,7 @@
 									</header>
 									
 									<div class="ex1"><p style ="color: black";>
- <iframe src="https://apps.rotman.utoronto.ca/MediasiteVideoLink?Rid=720fbc6dc4ee4c01a730c5aae60472dd1d" width="100%" height="350px;"></iframe>	<br> </br>								
+ <iframe style="padding-bottom: 5px;" src="https://apps.rotman.utoronto.ca/MediasiteVideoLink?Rid=720fbc6dc4ee4c01a730c5aae60472dd1d" width="100%" height="350px;"></iframe>								
 These modules are designed for all incoming students who have little or no familiarity with financial accounting concepts. The Financial Accounting course is often quite challenging for such students. Our goal is to provide you with a broad familiarity of the building blocks on which almost all financial accounting is built, and help ease your transition into the course. The modules consist of readings, short videos, and online exercises.
 
 Throughout the course you will find references to the Workbook and Apple's financial statements. They are available in the "Course Files" tab and we encourage you to download them now.
@@ -166,8 +166,21 @@ Enjoy!
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			
-		<script>	if (top.location!= self.location) {
-   top.location = self.location.href; </script>
+	<!-- <script>	if (top.location!= self.location) {
+   top.location = self.location.href; </script> -->
+
+<script type="text/javascript"> // if site open in iframe then redirect to main site
+      
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+  $(function(){
+ if(window.top.location != window.self.location)
+             {
+                top.window.location.href = window.self.location;
+             }
+        });
+}
+</script>
+
    
 
 
